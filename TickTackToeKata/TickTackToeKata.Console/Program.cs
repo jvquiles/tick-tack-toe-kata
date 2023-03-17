@@ -2,5 +2,5 @@
 
 using TickTackToeKata.Tests;
 
-var game = new Game(3, 3);
+var game = new Game();
 Console.WriteLine(game.PrintBoard());

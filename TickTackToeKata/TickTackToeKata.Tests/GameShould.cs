@@ -8,7 +8,7 @@ public class GameShould
     [SetUp]
     public void Setup()
     {
-        _game = new Game(3, 3);
+        _game = new Game();
     }
     
     [Test]
