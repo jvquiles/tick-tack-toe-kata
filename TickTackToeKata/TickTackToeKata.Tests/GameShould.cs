@@ -17,4 +17,12 @@ public class GameShould
         var result = _game.PrintBoard();
         Assert.That(result, Is.EqualTo("[ ][ ][ ]\n[ ][ ][ ]\n[ ][ ][ ]\n"));
     }
+
+    [Test]
+    public void DoFirstMove()
+    {
+        _game.Move(0, 0);
+        var result = _game.PrintBoard();
+        Assert.That(result, Is.EqualTo("[X][ ][ ]\n[ ][ ][ ]\n[ ][ ][ ]\n"));
+    }
 }

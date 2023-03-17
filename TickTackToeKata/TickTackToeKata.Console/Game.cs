@@ -10,4 +10,8 @@ public class Game
     {
         return "[ ][ ][ ]\n[ ][ ][ ]\n[ ][ ][ ]\n";
     }
+
+    public void Move(int x, int y)
+    {
+    }
 }
