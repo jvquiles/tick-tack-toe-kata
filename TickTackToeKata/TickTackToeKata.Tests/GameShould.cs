@@ -1,7 +1,4 @@
-﻿using NUnit.Framework;
-using NUnit.Framework.Constraints;
-
-namespace TickTackToeKata.Tests;
+﻿namespace TickTackToeKata.Tests;
 
 [TestFixture]
 public class GameShould
@@ -19,17 +16,5 @@ public class GameShould
     {
         var result = _game.PrintBoard();
         Assert.That(result, Is.EqualTo("[ ][ ][ ]\n[ ][ ][ ]\n[ ][ ][ ]\n"));
-    }
-}
-
-public class Game
-{
-    public Game(int i, int i1)
-    {
-    }
-
-    public string PrintBoard()
-    {
-        return "[ ][ ][ ]\n[ ][ ][ ]\n[ ][ ][ ]\n";
     }
 }
