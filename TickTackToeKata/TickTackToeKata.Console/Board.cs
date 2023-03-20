@@ -13,4 +13,9 @@ public class Board
     {
         return _board;
     }
+
+    public void Move(string board)
+    {
+        _board = board;
+    }
 }

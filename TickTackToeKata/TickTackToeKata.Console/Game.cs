@@ -18,16 +18,16 @@ public class Game
     {
         if (x is 0 && y is 1)
         {
-            _board._board = "[X][O][ ]\n[ ][ ][ ]\n[ ][ ][ ]\n";
+            _board.Move("[X][O][ ]\n[ ][ ][ ]\n[ ][ ][ ]\n");
             return;
         }
 
         if (x is 1 && y is 1)
         {
-            _board._board = "[X][O][ ]\n[ ][X][ ]\n[ ][ ][ ]\n";
+            _board.Move("[X][O][ ]\n[ ][X][ ]\n[ ][ ][ ]\n");
             return;
         }
 
-        _board._board = "[X][ ][ ]\n[ ][ ][ ]\n[ ][ ][ ]\n";
+        _board.Move("[X][ ][ ]\n[ ][ ][ ]\n[ ][ ][ ]\n");
     }
 }
