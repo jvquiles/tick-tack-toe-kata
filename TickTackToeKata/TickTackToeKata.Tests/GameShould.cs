@@ -46,4 +46,11 @@ public class GameShould
         var result = _game.PrintBoard();
         Assert.That(result, Is.EqualTo("[X][O][ ]\n[ ][X][ ]\n[ ][ ][ ]\n"));
     }
+
+    [Test]
+    public void LetPlayerXWinByFirstRow()
+    {
+        var result = _game.CheckEnd();
+        Assert.That(result, Is.EqualTo("Player X wins"));
+    }
 }

@@ -21,4 +21,9 @@ public class Game
         _board.Move(x, y, _currentToken);
         _currentToken = _currentToken == "X" ? "O" : "X";
     }
+
+    public string CheckEnd()
+    {
+        return string.Empty;
+    }
 }
