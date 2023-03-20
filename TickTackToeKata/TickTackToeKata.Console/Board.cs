@@ -2,7 +2,7 @@
 
 public class Board
 {
-    internal string _board;
+    private string _board;
 
     public Board()
     {
@@ -14,7 +14,7 @@ public class Board
         return _board;
     }
 
-    public void Move(string board)
+    public void Move(string board, int x, int y)
     {
         _board = board;
     }
