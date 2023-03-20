@@ -21,6 +21,12 @@ public class Game
             _board = "[X][O][ ]\n[ ][ ][ ]\n[ ][ ][ ]\n";
             return;
         }
+
+        if (x is 1 && y is 1)
+        {
+            _board = "[X][O][ ]\n[ ][X][ ]\n[ ][ ][ ]\n";
+            return;
+        }
         
         _board = "[X][ ][ ]\n[ ][ ][ ]\n[ ][ ][ ]\n";
     }

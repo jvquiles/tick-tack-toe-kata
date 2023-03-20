@@ -42,6 +42,6 @@ public class GameShould
         _game.Move(0,1);
         _game.Move(1,1);
         var result = _game.PrintBoard();
-        Assert.That(result, Is.EqualTo("[X][O][ ]\n[X][ ][ ]\n[ ][ ][ ]\n"));
+        Assert.That(result, Is.EqualTo("[X][O][ ]\n[ ][X][ ]\n[ ][ ][ ]\n"));
     }
 }
