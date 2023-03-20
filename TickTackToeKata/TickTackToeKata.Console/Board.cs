@@ -39,9 +39,9 @@ public class Board
         };
     }
 
-    public void Move(string board, int x, int y)
+    public void Move(string board, int x, int y, string token)
     {
-        _cells[x, y] = "X";
+        _cells[x, y] = token;
         _board = board;
     }
 }
