@@ -11,7 +11,7 @@ public class Game
 
     public string PrintBoard()
     {
-        return _board._board;
+        return _board.Format();
     }
 
     public void Move(int x, int y)

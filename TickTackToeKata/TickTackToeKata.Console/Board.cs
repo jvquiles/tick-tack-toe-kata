@@ -8,4 +8,9 @@ public class Board
     {
         _board = "[ ][ ][ ]\n[ ][ ][ ]\n[ ][ ][ ]\n";
     }
+
+    public string Format()
+    {
+        return _board;
+    }
 }
