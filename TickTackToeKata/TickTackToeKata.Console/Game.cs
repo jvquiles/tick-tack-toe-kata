@@ -18,7 +18,7 @@ public class Game
 
     public void Move(int x, int y)
     {
-        _board.Move("[X][ ][ ]\n[ ][ ][ ]\n[ ][ ][ ]\n", x, y, _currentToken);
+        _board.Move(x, y, _currentToken);
         _currentToken = _currentToken == "X" ? "O" : "X";
     }
 }

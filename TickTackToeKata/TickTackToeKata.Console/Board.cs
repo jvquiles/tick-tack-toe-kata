@@ -4,13 +4,11 @@ namespace TickTackToeKata.Console;
 
 public class Board
 {
-    private string _board;
     private string[,] _cells;
 
     public Board()
     {
         _cells = new string[3, 3];
-        _board = "[ ][ ][ ]\n[ ][ ][ ]\n[ ][ ][ ]\n";
     }
 
     public string Format()
@@ -39,9 +37,8 @@ public class Board
         };
     }
 
-    public void Move(string board, int x, int y, string token)
+    public void Move(int x, int y, string token)
     {
         _cells[x, y] = token;
-        _board = board;
     }
 }
