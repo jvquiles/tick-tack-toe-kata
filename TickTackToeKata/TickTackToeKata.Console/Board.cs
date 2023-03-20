@@ -31,4 +31,9 @@ public class Board
     {
         _cells[x, y] = token;
     }
+
+    public bool HasPlayerFirstRow(string token)
+    {
+        return _cells[0, 0] == token && _cells[0, 1] == token && _cells[0, 2] == token;
+    }
 }

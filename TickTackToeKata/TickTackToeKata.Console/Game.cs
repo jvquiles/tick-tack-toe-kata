@@ -24,6 +24,15 @@ public class Game
 
     public string CheckEnd()
     {
-        return "Player X wins";
+        if (_board.HasPlayerFirstRow("X"))
+        {
+            return "Player X wins";
+        }
+        else if (_board.HasPlayerFirstRow("O"))
+        {
+            return "Player Y wins";
+        }
+
+        return "Not finished";
     }
 }
