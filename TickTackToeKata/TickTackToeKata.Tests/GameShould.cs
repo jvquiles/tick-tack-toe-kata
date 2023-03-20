@@ -1,4 +1,6 @@
-﻿namespace TickTackToeKata.Tests;
+﻿using TickTackToeKata.Console;
+
+namespace TickTackToeKata.Tests;
 
 [TestFixture]
 public class GameShould

@@ -1,4 +1,4 @@
-﻿namespace TickTackToeKata.Tests;
+﻿namespace TickTackToeKata.Console;
 
 public class Game
 {
