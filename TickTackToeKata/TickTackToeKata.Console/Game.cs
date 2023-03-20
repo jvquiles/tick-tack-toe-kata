@@ -24,6 +24,6 @@ public class Game
 
     public string CheckEnd()
     {
-        return string.Empty;
+        return "Player X wins";
     }
 }
