@@ -8,7 +8,7 @@ public class Board
 
     public Board()
     {
-        _cells = new string[3, 3];
+        _cells = new[,] { { " ", " ", " " }, {" ", " ", " "}, {" ", " ", " "} };
     }
 
     public string Format()
@@ -18,23 +18,13 @@ public class Board
         {
             for (int j = 0; j < 3; j++)
             {
-                result.Append($"[{FormatCell(_cells[i, j])}]");
+                result.Append($"[{_cells[i, j]}]");
             }
 
             result.Append("\n");
         }
         
         return result.ToString();
-    }
-
-    private string FormatCell(string cell)
-    {
-        return cell switch
-        {
-            "X" => "X",
-            "O" => "O",
-            _ => " "
-        };
     }
 
     public void Move(int x, int y, string token)
