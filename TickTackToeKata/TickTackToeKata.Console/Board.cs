@@ -37,9 +37,9 @@ public class Board
         return _cells[row, 0] == token && _cells[row, 1] == token && _cells[row, 2] == token;
     }
 
-    public bool HasPlayerFirstColumn(string token)
+    public bool HasPlayerColumn(string token, int column)
     {
-        return _cells[0, 0] == token && _cells[1, 0] == token && _cells[2, 0] == token;
+        return _cells[0, column] == token && _cells[1, column] == token && _cells[2, column] == token;
     }
 
     public bool HasPlayerSecondColumn(string token)
