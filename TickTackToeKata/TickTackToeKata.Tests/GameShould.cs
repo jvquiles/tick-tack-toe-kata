@@ -210,7 +210,7 @@ public class GameShould
     }
 
     [Test]
-    public void LeyPlayerOWinByFirstDiagonal()
+    public void LetPlayerOWinByFirstDiagonal()
     {
         _game.Move(0, 1);
         _game.Move(0, 0);
@@ -220,5 +220,17 @@ public class GameShould
         _game.Move(2, 2);
         var result = _game.CheckEnd();
         Assert.That(result, Is.EqualTo("Player O wins"));
+    }
+
+    [Test]
+    public void LetPlayerXWinBySecondDiagonal()
+    {
+        _game.Move(0, 2);
+        _game.Move(0, 0);
+        _game.Move(1, 1);
+        _game.Move(2, 2);
+        _game.Move(2, 0);
+        var result = _game.CheckEnd();
+        Assert.That(result, Is.EqualTo("Player X wins"));
     }
 }
