@@ -37,6 +37,7 @@ public class Game
         }
 
         if (_board.HasPlayerRow("O", 0)
+            || _board.HasPlayerRow("O", 1)
             || _board.HasPlayerFirstColumn("O"))
         {
             return "Player Y wins";
