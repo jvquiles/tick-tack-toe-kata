@@ -246,4 +246,20 @@ public class GameShould
         var result = _game.CheckEnd();
         Assert.That(result, Is.EqualTo("Player O wins"));
     }
+
+    [Test]
+    public void LetGameFinishWithoutWinners()
+    {
+        _game.Move(0, 0);
+        _game.Move(0, 1);
+        _game.Move(0, 2);
+        _game.Move(1, 1);
+        _game.Move(1, 0);
+        _game.Move(1, 2);
+        _game.Move(2, 1);
+        _game.Move(2, 0);
+        _game.Move(2, 2);
+        var result = _game.CheckEnd();
+        Assert.That(result, Is.EqualTo("No winner"));
+    }
 }
