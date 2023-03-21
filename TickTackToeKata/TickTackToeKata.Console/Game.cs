@@ -18,8 +18,11 @@ public class Game
 
     public void Move(int x, int y)
     {
-        _board.Move(x, y, _currentToken);
-        _currentToken = _currentToken == "X" ? "O" : "X";
+        if (_board.IsEmpty(x, y))
+        {
+            _board.Move(x, y, _currentToken);
+            _currentToken = _currentToken == "X" ? "O" : "X";
+        }
     }
 
     public string GetCurrentToken()

@@ -58,4 +58,9 @@ public class Board
                || HasPlayerRow(" ", 1)
                || HasPlayerRow(" ", 2);
     }
+
+    public bool IsEmpty(int x, int y)
+    {
+        return _cells[x, y] == " ";
+    }
 }
