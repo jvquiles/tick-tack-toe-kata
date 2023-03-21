@@ -262,4 +262,13 @@ public class GameShould
         var result = _game.CheckEnd();
         Assert.That(result, Is.EqualTo("No winner"));
     }
+
+    [Test]
+    public void PreventMoveToAndNonEmptyCell()
+    {
+        _game.Move(0,0);
+        _game.Move(0,0);
+        var result = _game.PrintBoard();
+        Assert.That(result, Is.EqualTo("[X][ ][ ]\n[ ][ ][ ]\n[ ][ ][ ]\n"));
+    }
 }
