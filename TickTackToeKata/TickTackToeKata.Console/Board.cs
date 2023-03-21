@@ -32,7 +32,7 @@ public class Board
         _cells[x, y] = token;
     }
 
-    public bool HasPlayerFirstRow(string token, int row)
+    public bool HasPlayerRow(string token, int row)
     {
         return _cells[row, 0] == token && _cells[row, 1] == token && _cells[row, 2] == token;
     }
