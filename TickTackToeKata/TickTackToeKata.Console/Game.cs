@@ -41,6 +41,7 @@ public class Game
 
         if (_board.HasPlayerRow("O", 0)
             || _board.HasPlayerRow("O", 1)
+            || _board.HasPlayerRow("O", 2)
             || _board.HasPlayerColumn("O", 0)
             || _board.HasPlayerColumn("O", 1)
             || _board.HasPlayerColumn("O", 2))
