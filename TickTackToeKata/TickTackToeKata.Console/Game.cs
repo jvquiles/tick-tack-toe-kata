@@ -47,7 +47,8 @@ public class Game
             || _board.HasPlayerColumn("O", 0)
             || _board.HasPlayerColumn("O", 1)
             || _board.HasPlayerColumn("O", 2)
-            || _board.HasPlayerFirstDiagonal("O"))
+            || _board.HasPlayerFirstDiagonal("O")
+            || _board.HasPlayerSecondDiagonal("O"))
         {
             return "Player O wins";
         }
