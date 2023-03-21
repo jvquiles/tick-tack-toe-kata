@@ -34,7 +34,7 @@ public class Game
             return "Player X wins";
         }
 
-        if (_board.HasPlayerFirstRow("O"))
+        if (_board.HasPlayerFirstRow("O") || _board.HasPlayerFirstColumn("O"))
         {
             return "Player Y wins";
         }
