@@ -233,4 +233,17 @@ public class GameShould
         var result = _game.CheckEnd();
         Assert.That(result, Is.EqualTo("Player X wins"));
     }
+
+    [Test]
+    public void LetPlayerOWinBySecondDiagonal()
+    {
+        _game.Move(0, 0);
+        _game.Move(0, 2);
+        _game.Move(1, 0);
+        _game.Move(1, 1);
+        _game.Move(2, 2);
+        _game.Move(2, 0);
+        var result = _game.CheckEnd();
+        Assert.That(result, Is.EqualTo("Player O wins"));
+    }
 }
