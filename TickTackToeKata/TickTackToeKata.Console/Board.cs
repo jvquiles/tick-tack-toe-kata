@@ -41,9 +41,4 @@ public class Board
     {
         return _cells[0, column] == token && _cells[1, column] == token && _cells[2, column] == token;
     }
-
-    public bool HasPlayerSecondColumn(string token)
-    {     return _cells[0, 1] == token && _cells[1, 1] == token && _cells[2, 1] == token;
-
-    }
 }
