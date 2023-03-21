@@ -29,7 +29,7 @@ public class Game
 
     public string CheckEnd()
     {
-        if (_board.HasPlayerRow("X", 0) 
+        if (_board.HasPlayerRow("X", 0)
             || _board.HasPlayerRow("X", 1)
             || _board.HasPlayerRow("X", 2)
             || _board.HasPlayerColumn("X", 0)
@@ -53,6 +53,11 @@ public class Game
             return "Player O wins";
         }
 
-        return "Not finished";
+        if (_board.HasEmptyCells())
+        {
+            return "Not finished";
+        }
+
+        return "No winner";
     }
 }

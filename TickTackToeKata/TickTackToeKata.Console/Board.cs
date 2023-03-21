@@ -51,4 +51,11 @@ public class Board
     {
         return _cells[0, 2] == token && _cells[1, 1] == token && _cells[2, 0] == token;
     }
+
+    public bool HasEmptyCells()
+    {
+        return HasPlayerRow(" ", 0)
+               || HasPlayerRow(" ", 1)
+               || HasPlayerRow(" ", 2);
+    }
 }
