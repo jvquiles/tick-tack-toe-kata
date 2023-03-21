@@ -32,14 +32,9 @@ public class Board
         _cells[x, y] = token;
     }
 
-    public bool HasPlayerFirstRow(string token)
+    public bool HasPlayerFirstRow(string token, int row)
     {
-        return _cells[0, 0] == token && _cells[0, 1] == token && _cells[0, 2] == token;
-    }
-
-    public bool HasPlayerSecondRow(string token)
-    {      
-        return _cells[1, 0] == token && _cells[1, 1] == token && _cells[1, 2] == token;
+        return _cells[row, 0] == token && _cells[row, 1] == token && _cells[row, 2] == token;
     }
 
     public bool HasPlayerFirstColumn(string token)

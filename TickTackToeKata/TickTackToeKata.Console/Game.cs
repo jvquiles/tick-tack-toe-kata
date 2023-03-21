@@ -29,14 +29,14 @@ public class Game
 
     public string CheckEnd()
     {
-        if (_board.HasPlayerFirstRow("X") 
-            || _board.HasPlayerSecondRow("X")
+        if (_board.HasPlayerFirstRow("X", 0) 
+            || _board.HasPlayerFirstRow("X", 1)
             || _board.HasPlayerFirstColumn("X"))
         {
             return "Player X wins";
         }
 
-        if (_board.HasPlayerFirstRow("O")
+        if (_board.HasPlayerFirstRow("O", 0)
             || _board.HasPlayerFirstColumn("O"))
         {
             return "Player Y wins";
