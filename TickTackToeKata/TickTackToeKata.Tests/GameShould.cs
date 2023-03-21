@@ -71,4 +71,16 @@ public class GameShould
         var result = _game.CheckEnd();
         Assert.That(result, Is.EqualTo("Player Y wins"));
     }
+
+    [Test]
+    public void LetPlayerXWinByFirstColumn()
+    {
+        _game.Move(0, 0);
+        _game.Move(0, 1);
+        _game.Move(1, 0);
+        _game.Move(1, 1);
+        _game.Move(0, 2);
+        var result = _game.CheckEnd();
+        Assert.That(result, Is.EqualTo("Player X wins"));
+    }
 }
