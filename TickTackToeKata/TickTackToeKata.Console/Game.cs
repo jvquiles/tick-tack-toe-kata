@@ -22,6 +22,11 @@ public class Game
         _currentToken = _currentToken == "X" ? "O" : "X";
     }
 
+    public string GetCurrentToken()
+    {
+        return _currentToken;
+    }
+
     public string CheckEnd()
     {
         if (_board.HasPlayerFirstRow("X"))
