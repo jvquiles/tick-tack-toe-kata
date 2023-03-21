@@ -60,7 +60,7 @@ public class GameShould
     }
 
     [Test]
-    public void LetPlayerYWinByFirstRow()
+    public void LetPlayerOWinByFirstRow()
     {
         _game.Move(1, 0);
         _game.Move(0, 0);
@@ -69,7 +69,7 @@ public class GameShould
         _game.Move(2, 2);
         _game.Move(0, 2);
         var result = _game.CheckEnd();
-        Assert.That(result, Is.EqualTo("Player Y wins"));
+        Assert.That(result, Is.EqualTo("Player O wins"));
     }
 
     [Test]
@@ -85,7 +85,7 @@ public class GameShould
     }
 
     [Test]
-    public void LetPlayerYWinByFirstColumn()
+    public void LetPlayerOWinByFirstColumn()
     {
         _game.Move(0, 1);
         _game.Move(0, 0);
@@ -94,7 +94,7 @@ public class GameShould
         _game.Move(2, 2);
         _game.Move(2, 0);
         var result = _game.CheckEnd();
-        Assert.That(result, Is.EqualTo("Player Y wins"));
+        Assert.That(result, Is.EqualTo("Player O wins"));
     }
 
     [Test]
@@ -110,7 +110,7 @@ public class GameShould
     }
 
     [Test]
-    public void LetPlayerYWinBySecondRow()
+    public void LetPlayerOWinBySecondRow()
     {
         _game.Move(0, 0);
         _game.Move(1, 0);
@@ -119,7 +119,7 @@ public class GameShould
         _game.Move(2, 0);
         _game.Move(1, 2);
         var result = _game.CheckEnd();
-        Assert.That(result, Is.EqualTo("Player Y wins"));
+        Assert.That(result, Is.EqualTo("Player O wins"));
     }
 
     [Test]
@@ -135,7 +135,7 @@ public class GameShould
     }
 
     [Test]
-    public void LetPlayerYWinBySecondColumn()
+    public void LetPlayerOWinBySecondColumn()
     {
         _game.Move(0, 0);
         _game.Move(0, 1);
@@ -144,7 +144,7 @@ public class GameShould
         _game.Move(2, 2);
         _game.Move(2, 1);
         var result = _game.CheckEnd();
-        Assert.That(result, Is.EqualTo("Player Y wins"));
+        Assert.That(result, Is.EqualTo("Player O wins"));
     }
 
     [Test]
@@ -160,7 +160,7 @@ public class GameShould
     }
 
     [Test]
-    public void LetPlayerYWinByThirdColumn()
+    public void LetPlayerOWinByThirdColumn()
     {
         _game.Move(0, 0);
         _game.Move(0, 2);
@@ -169,6 +169,6 @@ public class GameShould
         _game.Move(1, 0);
         _game.Move(2, 2);
         var result = _game.CheckEnd();
-        Assert.That(result, Is.EqualTo("Player Y wins"));
+        Assert.That(result, Is.EqualTo("Player O wins"));
     }
 }

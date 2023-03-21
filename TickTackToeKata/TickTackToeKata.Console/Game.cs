@@ -44,7 +44,7 @@ public class Game
             || _board.HasPlayerColumn("O", 1)
             || _board.HasPlayerColumn("O", 2))
         {
-            return "Player Y wins";
+            return "Player O wins";
         }
 
         return "Not finished";
