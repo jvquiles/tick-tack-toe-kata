@@ -33,7 +33,8 @@ public class Game
         {
             return "Player X wins";
         }
-        else if (_board.HasPlayerFirstRow("O"))
+
+        if (_board.HasPlayerFirstRow("O"))
         {
             return "Player Y wins";
         }
